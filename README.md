@@ -15,3 +15,4 @@
 4. Run `composer install`.
 5. Run `php artisan key:generate`.
 6. Run `./vendor/bin/sail up -d`.
+7. Visit `http://localhost` to view the site.
