@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\Office;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -12,11 +12,25 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
+        // Get the content of the CSV file.
+        $csvFile = fopen(database_path() . '/seeds/office-data.csv', 'r');
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        $firstline = true;
+        while (($data = fgetcsv($csvFile)) !== FALSE) {
+            if (!$firstline) {
+                Office::create(
+                    [
+                        'name' => $data['0'],
+                        'price' => $data['1'],
+                        'offices' => $data['2'],
+                        'tables' => $data['3'],
+                        'sqm' => $data['4']
+                    ]
+                );
+            }
+            $firstline = false;
+        }
+
+        fclose($csvFile);
     }
 }
