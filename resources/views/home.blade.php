@@ -6,24 +6,24 @@
     @vite('resources/css/app.css')
 </head>
 <body>
-<table class="table-auto">
-    <thead>
+<table class="min-w-full text-left text-sm font-light">
+    <thead class="border-b font-medium dark:border-neutral-500">
     <tr>
-        <th>Name</th>
-        <th>Price</th>
-        <th>Offices</th>
-        <th>Tables</th>
-        <th>SQM</th>
+        <th scope="col" class="px-6 py-4">Name</th>
+        <th scope="col" class="px-6 py-4">Price</th>
+        <th scope="col" class="px-6 py-4">Offices</th>
+        <th scope="col" class="px-6 py-4">Tables</th>
+        <th scope="col" class="px-6 py-4">SQM</th>
     </tr>
     </thead>
     <tbody>
     @foreach($offices as $office)
-        <tr>
-            <td>{{ $office['name'] }}</td>
-            <td>{{ $office['price'] }}</td>
-            <td>{{ $office['offices'] }}</td>
-            <td>{{ $office['tables'] }}</td>
-            <td>{{ $office['sqm'] }}</td>
+        <tr class="border-b dark:border-neutral-500">
+            <td class="whitespace-nowrap px-6 py-4">{{ $office['name'] }}</td>
+            <td class="whitespace-nowrap px-6 py-4">{{ $office['price'] }}</td>
+            <td class="whitespace-nowrap px-6 py-4">{{ $office['offices'] }}</td>
+            <td class="whitespace-nowrap px-6 py-4">{{ $office['tables'] }}</td>
+            <td class="whitespace-nowrap px-6 py-4">{{ $office['sqm'] }}</td>
         </tr>
     @endforeach
     </tbody>
