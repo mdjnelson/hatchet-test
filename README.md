@@ -5,7 +5,6 @@
 1. Install [Docker & Docker Compose](https://docs.docker.com/compose/install/).
 2. Install [Composer](https://getcomposer.org/).
 3. Install [Git](https://git-scm.com/downloads).
-4. Install [PHP](https://www.php.net/manual/en/install.php).
 
 ### Launching application.
 
