@@ -17,3 +17,7 @@
 7. Run `./vendor/bin/sail npm run build`.
 8. Run `./vendor/bin/sail artisan migrate --seed`.
 9. Visit `http://localhost` to view the site.
+
+### PHPUnit tests.
+
+1. These can be run by using `./vendor/bin/sail test`.
