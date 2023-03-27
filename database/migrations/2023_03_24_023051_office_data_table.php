@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name')->nullable(false);
             $table->integer('price')->nullable(false);
-            $table->string('offices')->nullable(false);
+            $table->integer('offices')->nullable(false);
             $table->integer('tables')->nullable(false);
             $table->integer('sqm')->nullable(false);
             $table->timestamps();
