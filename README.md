@@ -20,4 +20,5 @@
 
 ### PHPUnit tests.
 
-1. These can be run by using `./vendor/bin/sail test`.
+1. Run `./vendor/bin/sail artisan migrate --env=testing`.
+2. These can be run by using `./vendor/bin/sail test`.
