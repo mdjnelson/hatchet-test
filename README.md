@@ -6,7 +6,7 @@
 2. Install [Composer](https://getcomposer.org/).
 3. Install [Git](https://git-scm.com/downloads).
 
-### Launching application.
+### Launching application
 
 1. Run `git clone https://github.com/mdjnelson/hatchet-test.git hatchet-test`.
 2. Run `cd hatchet-test`.
@@ -18,7 +18,7 @@
 8. Run `./vendor/bin/sail npm run dev`.
 9. Visit `http://localhost` to view the site.
 
-### PHPUnit tests.
+### PHPUnit tests
 
 1. Run `./vendor/bin/sail artisan migrate --env=testing`.
 2. These can be run by using `./vendor/bin/sail test`.
