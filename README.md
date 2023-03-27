@@ -14,7 +14,7 @@
 4. Run `composer install`.
 5. Run `./vendor/bin/sail up -d`.
 6. Run `./vendor/bin/sail npm install`.
-7. Run `./vendor/bin/sail npm run build`.
+7. Run `./vendor/bin/sail npm run dev`.
 8. Run `./vendor/bin/sail artisan migrate --seed`.
 9. Visit `http://localhost` to view the site.
 

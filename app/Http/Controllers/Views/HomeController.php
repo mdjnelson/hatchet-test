@@ -13,10 +13,6 @@ class HomeController extends Controller
      */
     public function home(): View
     {
-        return view('../home',
-            [
-                'offices' => Office::all()->toArray()
-            ]
-        );
+        return view('../home');
     }
 }

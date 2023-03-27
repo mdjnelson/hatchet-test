@@ -15,8 +15,11 @@ import { createApp } from 'vue';
 
 const app = createApp({});
 
-import ExampleComponent from './components/ExampleComponent.vue';
-app.component('example-component', ExampleComponent);
+import OfficeTableComponent from './components/OfficeTableComponent.vue';
+import SpinnerComponent from "./components/SpinnerComponent.vue";
+
+app.component('office-table-component', OfficeTableComponent);
+app.component('spinner', SpinnerComponent);
 
 /**
  * The following block of code may be used to automatically register your
