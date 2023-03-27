@@ -71,8 +71,6 @@ export default {
                 this.isLoading = false;
                 this.noResults = true;
                 this.offices = [];
-
-                window.console.log(this.noResults);
             });
         },
     }
